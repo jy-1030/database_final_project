@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9*9文具</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <div class="logodiv">
+            <a href="admin.html" class="navbar-brand logo">九乘九文具</a>
+        </div>
+            <button data-target="#menu" class="navbar-toggler" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-items"><a href="product.html" class="nav-link">產品</a></li>
+                    <li class="nav-items"><a href="order.html" class="nav-link">訂單</a></li>
+                    <li class="nav-items"><a href="analysis.php" class="nav-link">分析</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!--navi-->
+
+
+    <!--查詢訂單-->
+
+    <div id="order_search">
+    <form name="form" action="http://127.0.0.1/final_project/order_search.php" method="POST" accept-charset="UTF-8" align="center">
+        <h1 class="text-center text-bold text-gray m-5">查詢訂單</h1>
+        <form action="" class="form col-4">
+            <div class="form-group"><input type="text" name="order_id" class="form-control" placeholder="輸入訂單編號"></div>
+            <div class="form-group"><button type="submit" class="btn btn-danger">送出</button></div>
+        </form>
+    </div>
+
+    <!--修改訂單-->
+
+    <div id="order_update">
+    <form name="form" action="http://127.0.0.1/final_project/order_update.php" method="POST" accept-charset="UTF-8" align="center">
+        <h1 class="text-center text-bold text-gray m-5">修改訂單</h1>
+        <form action="" class="form col-4">
+            <div class="form-group"><input type="text" name="order_id" class="form-control" placeholder="輸入訂單編號"></div>
+            <div class="form-group"><button type="submit" class="btn btn-danger">送出</button></div>
+        </form>
+    </div>
+</body>
+</html>        
